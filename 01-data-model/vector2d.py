@@ -53,3 +53,11 @@ class Vector:
 
     def __mul__(self, scalar):
         return Vector(self.x * scalar, self.y * scalar)
+    
+
+def genericmultiply(a, *b, **c):
+    p = a * b[0] * c['diamonds']
+    return p
+
+
+print(genericmultiply(2, 5, diamonds= 10))
